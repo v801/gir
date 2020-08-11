@@ -1,0 +1,46 @@
+{
+  "name": "gir",
+  "version": "1.0.1",
+  "description": "a discord bot based on discord.js",
+  "author": {
+    "name": "v801"
+  },
+  "main": "gir.js",
+  "dependencies": {
+    "butts": "^1.1.0",
+    "cat-ascii-faces": "^2.0.0",
+    "cool-ascii-faces": "^1.3.4",
+    "discord.js": "11.2.1",
+    "flip": "^1.0.0",
+    "humanize-duration": "^3.9.0",
+    "node-random-name": "^1.0.1",
+    "pokemon-data": "^0.1.4",
+    "random-game-name": "^1.0.2",
+    "randomcolor": "^0.5.3",
+    "rektangle": "^1.0.1",
+    "request": "^2.73.0",
+    "starwars": "^1.0.0",
+    "superb": "^2.0.0",
+    "textanary": "^4.0.0",
+    "x-ray": "^2.3.0"
+  },
+  "license": "MIT",
+  "keywords": [
+    "discord",
+    "discord.gg",
+    "bot",
+    "chat",
+    "steam",
+    "scrapes"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/v801/gir.git"
+  },
+  "bugs": {
+    "url": "https://github.com/v801/gir/issues"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
