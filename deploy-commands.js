@@ -9,6 +9,7 @@ const commands = [
     new SlashCommandBuilder().setName('catface').setDescription('Replies with random ascii cat faces.'),
     new SlashCommandBuilder().setName('commit').setDescription('Replies with something from whatthecommit.com.'),
     new SlashCommandBuilder().setName('devex').setDescription('Replies with a random developer excuse.'),
+    new SlashCommandBuilder().setName('dinner').setDescription('Replies with dinner from whatthefuckshouldimakefordinner.com'),
 ]
     .map(command => command.toJSON());
 
