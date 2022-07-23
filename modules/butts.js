@@ -1,17 +1,14 @@
-const butts = require('butts')
+const { SlashCommandBuilder } = require('discord.js');
+const butts = require('butts');
 
-exports.run = (bot, msg) => {
-
-  butts(butt => {
-    const randomButt = '```'+`${butt.toString()}`+'```'
-    msg.channel.send(randomButt)
-  })
-
-}
-
-exports.help = {
-  name: 'butts',
-  description: 'sweet ascii butts',
-  usage: 'butts',
-  aliases: ['butt']
-}
+module.exports = {
+	data: new SlashCommandBuilder()
+		.setName('butts')
+		.setDescription('Replies with ascii butts!'),
+	async execute(interaction) {
+    butts(butt => {
+      const randomButt = '```'+`${butt.toString()}`+'```'
+      return interaction.reply(randomButt);
+    })
+	},
+};

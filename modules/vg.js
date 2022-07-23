@@ -1,14 +1,11 @@
-const rgn = require('random-game-name')
+const { SlashCommandBuilder } = require('discord.js');
+const rgn = require('random-game-name');
 
-exports.run = (bot, msg) => {
-
-  msg.channel.send(`${rgn.random()}`)
-
-}
-
-exports.help = {
-  name: 'vg',
-  description: 'displays a random video game name',
-  usage: 'vg',
-  aliases: ['game', 'vg', 'vgn']
-}
+module.exports = {
+	data: new SlashCommandBuilder()
+		.setName('vg')
+		.setDescription('Replies with a random video game name.'),
+	async execute(interaction) {
+		return interaction.reply(rgn());
+	},
+};

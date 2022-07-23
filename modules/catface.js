@@ -1,14 +1,11 @@
-const catface = require('cat-ascii-faces')
+const { SlashCommandBuilder } = require('discord.js');
+const catface = require('cat-ascii-faces');
 
-exports.run = (bot, msg) => {
-
-  msg.channel.send(catface())
-
-}
-
-exports.help = {
-  name: 'catface',
-  description: 'random ascii cat face',
-  usage: 'catface',
-  aliases: []
-}
+module.exports = {
+	data: new SlashCommandBuilder()
+		.setName('catface')
+		.setDescription('Replies with a random ascii cat face!'),
+	async execute(interaction) {
+    return interaction.reply(catface());
+	},
+};
