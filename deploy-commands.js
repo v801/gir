@@ -12,6 +12,7 @@ const commands = [
     new SlashCommandBuilder().setName('dinner').setDescription('Replies with dinner from whatthefuckshouldimakefordinner.com'),
     new SlashCommandBuilder().setName('ic').setDescription('Replies with a random top video from Interdimensional Cable subreddit.'),
     new SlashCommandBuilder().setName('uptime').setDescription('Replies with the bots uptime.'),
+    new SlashCommandBuilder().setName('playing').setDescription('Sets the bots status to play a random game.'),
 ]
     .map(command => command.toJSON());
 
