@@ -1,10 +1,10 @@
 'use strict'
 
 try {
-  require('./config.json')
+    require('./config.json')
 } catch (e) {
-  console.log('Config file not found, make one using the example config and restart the bot.');
-  process.exit();
+    console.log('Config file not found, make one using the example config and restart the bot.');
+    process.exit();
 }
 const fs = require('node:fs');
 const path = require('node:path');
@@ -18,21 +18,21 @@ const commandsPath = path.join(__dirname, 'modules')
 const commandFiles = fs.readdirSync(commandsPath).filter(file => file.endsWith('.js'));
 
 for (const file of commandFiles) {
-  const filePath = path.join(commandsPath, file);
-	const command = require(filePath);
-  bot.commands.set(command.data?.name, command);
+    const filePath = path.join(commandsPath, file);
+    const command = require(filePath);
+    bot.commands.set(command.data?.name, command);
 }
 
 bot.on('interactionCreate', async interaction => {
-  if (!interaction.isChatInputCommand()) return;
-  const command = bot.commands.get(interaction.commandName);
-  if (!command) return;
-  try {
-    await command.execute(interaction);
-  } catch (error) {
-    console.error(error);
-    await interaction.reply({ content: 'There was an error while executing this command!', ephemeral: true })
-  }
+    if (!interaction.isChatInputCommand()) return;
+    const command = bot.commands.get(interaction.commandName);
+    if (!command) return;
+    try {
+        await command.execute(interaction);
+    } catch (error) {
+        console.error(error);
+        await interaction.reply({ content: 'There was an error while executing this command!', ephemeral: true })
+    }
 })
 
 
@@ -79,8 +79,8 @@ const gir = `
                                 :^~!7?JY5?                               
                                        .:                                
 `
-  console.log(gir);
-  process.title = "gir"
+    console.log(gir);
+    process.title = "gir"
 })
 
 bot.on('error', console.error)
