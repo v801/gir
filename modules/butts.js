@@ -7,7 +7,7 @@ module.exports = {
         .setDescription('Replies with ascii butts!'),
     async execute(bot, interaction) {
         butts(butt => {
-            const randomButt = '```'+`${butt.toString()}`+'```'
+            const randomButt = '```'+`${butt.toString()}`+'```';
             return interaction.reply(randomButt);
         })
     },

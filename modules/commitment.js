@@ -8,7 +8,7 @@ module.exports = {
     async execute(bot, interaction) {
         const errorMessage = 'Unable to get commit.'
         try {
-            const response = await axios.get('http://whatthecommit.com/index.txt')
+            const response = await axios.get('http://whatthecommit.com/index.txt');
             const commit = response.data.toString().trim();
             return interaction.reply(commit);
         } catch (error) {

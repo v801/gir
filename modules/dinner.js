@@ -7,7 +7,7 @@ module.exports = {
         .setName('dinner')
         .setDescription('Replies with dinner from whatthefuckshouldimakefordinner.com.'),
     async execute(bot, interaction) {
-        const errorMessage = 'Unable to get dinner!'
+        const errorMessage = 'Unable to get dinner!';
         try {
             const response = await axios.get('http://whatthefuckshouldimakefordinner.com/');
             let $ = cheerio.load(response.data);
