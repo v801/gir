@@ -28,7 +28,7 @@ bot.on('interactionCreate', async interaction => {
     const command = bot.commands.get(interaction.commandName);
     if (!command) return;
     try {
-        await command.execute(interaction);
+        await command.execute(bot, interaction);
     } catch (error) {
         console.error(error);
         await interaction.reply({ content: 'There was an error while executing this command!', ephemeral: true })

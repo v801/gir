@@ -10,7 +10,8 @@ const commands = [
     new SlashCommandBuilder().setName('commit').setDescription('Replies with something from whatthecommit.com.'),
     new SlashCommandBuilder().setName('devex').setDescription('Replies with a random developer excuse.'),
     new SlashCommandBuilder().setName('dinner').setDescription('Replies with dinner from whatthefuckshouldimakefordinner.com'),
-    new SlashCommandBuilder().setName('ic').setDescription('Random top video from Interdimensional Cable subreddit.'),
+    new SlashCommandBuilder().setName('ic').setDescription('Replies with a random top video from Interdimensional Cable subreddit.'),
+    new SlashCommandBuilder().setName('uptime').setDescription('Replies with the bots uptime.'),
 ]
     .map(command => command.toJSON());
 
