@@ -5,7 +5,7 @@ module.exports = {
     data: new SlashCommandBuilder()
         .setName('ic')
         .setDescription('Random top video from Interdimensional Cable subreddit.'),
-    async execute(interaction) {
+    async execute(bot, interaction) {
         const chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
         const randomChar = chars[Math.floor(Math.random()*26)];
         const randomNum = Math.floor(Math.random() * 900) + 100;

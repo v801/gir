@@ -5,7 +5,7 @@ module.exports = {
     data: new SlashCommandBuilder()
         .setName('butts')
         .setDescription('Replies with ascii butts!'),
-    async execute(interaction) {
+    async execute(bot, interaction) {
         butts(butt => {
             const randomButt = '```'+`${butt.toString()}`+'```'
             return interaction.reply(randomButt);

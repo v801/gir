@@ -4,7 +4,7 @@ module.exports = {
     data: new SlashCommandBuilder()
         .setName('devex')
         .setDescription('Replies with a random developer excuse.'),
-    async execute(interaction) {
+    async execute(bot, interaction) {
         const devex = excuses[Math.floor(Math.random()*excuses.length)];
         return interaction.reply(devex);
     },

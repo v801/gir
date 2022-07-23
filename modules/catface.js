@@ -5,7 +5,7 @@ module.exports = {
     data: new SlashCommandBuilder()
         .setName('catface')
         .setDescription('Replies with a random ascii cat face!'),
-    async execute(interaction) {
+    async execute(bot, interaction) {
         return interaction.reply(catface());
     },
 };

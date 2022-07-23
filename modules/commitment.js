@@ -5,7 +5,7 @@ module.exports = {
     data: new SlashCommandBuilder()
         .setName('commit')
         .setDescription('Replies with a something from whatthecommit.com.'),
-    async execute(interaction) {
+    async execute(bot, interaction) {
         const errorMessage = 'Unable to get commit.'
         try {
             const response = await axios.get('http://whatthecommit.com/index.txt')

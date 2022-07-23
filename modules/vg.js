@@ -5,7 +5,7 @@ module.exports = {
     data: new SlashCommandBuilder()
         .setName('vg')
         .setDescription('Replies with a random video game name.'),
-    async execute(interaction) {
+    async execute(bot, interaction) {
         return interaction.reply(rgn());
     },
 };
