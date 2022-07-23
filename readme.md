@@ -13,7 +13,7 @@ Make sure to copy `config.example.json` to `config.json` and add your bots token
 
 Running `npm install` then `node gir.js` should get you going.
 
-You might want to use something like [pm2](https://github.com/Unitech/pm2) to manage the process
+You can use something like [pm2](https://github.com/Unitech/pm2) to manage the process.
 
 ## Selfie
 ![gir_in_the_terminal](https://user-images.githubusercontent.com/32247825/180625593-1e2e6086-b181-48d7-aa44-c9e5423bd70a.png)
