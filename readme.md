@@ -1,6 +1,6 @@
 # gir for discord
 
-a discord bot based on [discord.js](https://github.com/hydrabolt/discord.js/)
+a discord bot built with [discord.js](https://github.com/discordjs/discord.js)
 
 you can find gir's modules in the `./modules` folder
 
@@ -10,8 +10,4 @@ make sure to copy `config.example.json` to `config.json` and add your bots token
 
 `npm install` then `node gir.js` should get you going
 
-## .help
-
-a preview of what the help command looks like
-
-![screenshot](https://user-images.githubusercontent.com/32247825/34635020-d1dc2404-f23e-11e7-9c65-67981332b0bb.png)
+you might want to use something like [pm2](https://github.com/Unitech/pm2) to manage the process
