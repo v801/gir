@@ -1,4 +1,6 @@
 {
+  "clientId": "YOUR-ID-HERE",
+  "guildId": "YOUR-ID-HERE",
   "token": "YOUR-TOKEN-HERE",
   "lastfm_key" : "YOUR-KEY-HERE"
 }
