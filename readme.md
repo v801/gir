@@ -9,7 +9,7 @@ Gir's modules in the `./modules` folder.
 
 ## Setup
 
-Make sure to copy `config.example.json` to `config.json` and add your bots token.
+Make sure to copy `config.example.json` to `config.json` and add your bots clientId and token.
 
 Running `npm install` then `node gir.js` should get you going.
 
