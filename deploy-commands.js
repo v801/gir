@@ -7,6 +7,7 @@ const commands = [
     new SlashCommandBuilder().setName('vg').setDescription('Replies with a random game name.'),
     new SlashCommandBuilder().setName('butts').setDescription('Replies with random ascii butts.'),
     new SlashCommandBuilder().setName('catface').setDescription('Replies with random ascii cat faces.'),
+    new SlashCommandBuilder().setName('catfact').setDescription('Replies with a random cat fact.'),
     new SlashCommandBuilder().setName('commit').setDescription('Replies with something from whatthecommit.com.'),
     new SlashCommandBuilder().setName('devex').setDescription('Replies with a random developer excuse.'),
     new SlashCommandBuilder().setName('dinner').setDescription('Replies with dinner from whatthefuckshouldimakefordinner.com'),
